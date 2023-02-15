@@ -1,8 +1,16 @@
 #logoDiv {
+  /* border: solid 1px #ffffff;
+  border-radius: 10px; */
 }
 #logoImg {
   width: 40%;
   height: 5%;
+  position: relative;
+  left: 30%;
+  border: solid 1px #ffffff;
+  border-radius: 10px;
+  border-right: 10px;
+  border-left: 10px;
 }
 #sideBar {
   width: 20%;
@@ -12,8 +20,35 @@
   left: 0;
   top: 0;
   overflow: auto;
-  border: 10px solid #BF506E;
-  border-color: #BF506E;
+  border: 10px solid #9A44A6;
   margin-left: 0%;
   padding-left: 0%;
+}
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  text-decoration: none;
+}
+#sideBar-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+}
+.tab-link {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: inline-flex;
+
+}
+#home-icon {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  display: flex-inline;
 }
