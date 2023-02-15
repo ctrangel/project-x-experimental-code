@@ -1,89 +1,19 @@
-/* #navbar {
-    font-size: 100px;
-    margin: auto;
-} */
-#nav-title {
-    color: rgb(234, 116, 73);
+#logoDiv {
 }
-#drop-zone {
-    margin-top: 20px;
+#logoImg {
+  width: 40%;
+  height: 5%;
 }
-
-#playlistForm {
-    margin-top: 15%;
-    margin-left: 25%;
-    margin-right: 50%;
-        width: 50%;
-        border: 3px solid rgb(241, 77, 17);
-        padding: 10px;
-}
-
-/* stuff for the nav bar before library application */
-/* .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    background-color: orangered;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.tab {
-    color: orange;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin: 0 20px;
-}
-
-
-.tab:hover {
-    background-color: black;
-    color: orangered;
-} */
-
-#searchImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 50%;
-    box-shadow: 10px 10px 5px 12px rgb(232, 175, 242);
-    margin-top: 15%;
-
-}
-
-#textSearch {
-    text-align: center;
-    margin-top: 10%;
-}
-
-#salutation {
-    text-align: center;
-    font-size: larger;
-}
-
-#headlines {
-    margin-top: 20%;
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-
-}
-
-#headline-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-    margin-bottom: auto;
-    margin-top: auto;
-    position: relative;
-    bottom: 25%;
+#sideBar {
+  width: 20%;
+  height: 100%;
+  background-color: #9A44A6;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  border: 10px solid #BF506E;
+  border-color: #BF506E;
+  margin-left: 0%;
+  padding-left: 0%;
 }
