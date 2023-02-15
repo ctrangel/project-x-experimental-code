@@ -1,11 +1,14 @@
 /* style sheet for index.html */
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body{
+  background-color: grey
 }
 
 #logoDiv {
@@ -22,30 +25,37 @@
   border-right: 10px;
   border-left: 10px;
 }
+#logoImg:hover {
+  width: 41%;
+}
 #sideBar {
   width: 20%;
   height: 100%;
-  background-color: #9A44A6;
+  background-color: #9a44a6;
   position: fixed;
   left: 0;
   top: 0;
   overflow: auto;
-  border: 10px solid #9A44A6;
+  border: 10px solid #9a44a6;
   margin-left: 0%;
   padding-left: 0%;
 }
 .tabs {
   margin: 10%;
   padding: 0;
-  list-style: none; 
+  list-style: none;
   text-decoration: none;
   border: solid 1px #ffffff;
   border-radius: 10px;
 }
+.tabs:hover {
+  background-color: #ffffff;
+  color: #9a44a6;
+}
 #sideBar-ul {
   margin: 0;
   padding: 0;
-  list-style: none; 
+  list-style: none;
 }
 .tab-link {
   margin: 0;
@@ -54,11 +64,10 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: inline-flex;
   align-items: center;
-  
-
 }
 .icons {
   margin: 3%;
@@ -66,4 +75,12 @@
   width: 20%;
   display: flex-inline;
   align-items: center;
+}
+/* headline cards */
+.card {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
 }
