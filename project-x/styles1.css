@@ -78,9 +78,38 @@ body{
 }
 /* headline cards */
 .card {
-  width: 300px;
-  margin: 0 auto;
+  width: 50%;
+
+  margin: 2%;
   padding: 20px;
   text-align: center;
-  border: 1px solid #ccc;
+  border: solid 10px rgb(217, 162, 130, .25);
+  background-color: rgb(217, 162, 130, .25);
+}
+#headline-img {
+  display: block;
+  margin: 10%;
+  width: 50%;
+  height: auto;
+  border: solid 5px rgb(217, 162, 130, .25);
+}
+
+#headline-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#headline {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #666;
+}
+
+#headline-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 10%;
 }

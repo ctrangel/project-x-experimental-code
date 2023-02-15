@@ -6,14 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-x</title>
     <link rel="stylesheet" type="text/css" href="styles1.css" />
+    <script src="C:\Users\Chris\OneDrive\Documents\GitHub\project-x-experimental-code\project-x\script.js"></script>
   </head>
 
   <body>
+    <div id="headline-div">
+      <div class="card">
+        <img id="headline-img" src="capybara-ok-he-pull-up.gif" alt="Image 1" />
+        <h3 id="headline-title">Card Title 1</h3>
+        <p id="headline">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="card">
+        <img id="headline-img" src="capybara-ok-he-pull-up.gif" alt="Image 2" />
+        <h3 id="headline-title">Card Title 2</h3>
+        <p id="headline">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div class="card">
+        <img id="headline-img" src="capybara-ok-he-pull-up.gif" alt="Image 3" />
+        <h3 id="headline-title">Card Title 3</h3>
+        <p id="headline">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+
     <div id="sideBar">
+      <script>
+        function hideSidebar() {
+          var sidebar = document.getElementById("sideBar");
+          sidebar.style.display = "none";
+        }
+      </script>
+      <img src="menu-icon.png" id="menu-icon" onclick="hideSideBar()" />
       <div id="logoDiv">
         <img src="logo.svg" id="logoImg" alt="logo" />
       </div>
-
       <nav>
         <ul id="sideBar-ul">
           <li class="tabs">
@@ -34,22 +67,5 @@
         </ul>
       </nav>
     </div>
-    <div class="card">
-        <img src="image1.jpg" alt="Image 1">
-        <h3>Card Title 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      
-      <div class="card">
-        <img src="image2.jpg" alt="Image 2">
-        <h3>Card Title 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      
-      <div class="card">
-        <img src="image3.jpg" alt="Image 3">
-        <h3>Card Title 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
   </body>
 </html>
