@@ -8,7 +8,27 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 body{
-  background-color: grey
+  /* background-color: #ffffff; */
+  /* background-image: url("music-gif.gif");
+  background-size: cover; */
+}
+#header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; 
+}
+#header {
+  font-size: 45px;
+    font-family: 'Courier New', monospace;
+    border: solid 1px #D9A282;
+    border-radius: 10px;
+    border-right: 10px;
+    border-left: 10px;
+    display: flex;
+    position: fixed;
+    right: 2vw;
 }
 
 #logoDiv {
