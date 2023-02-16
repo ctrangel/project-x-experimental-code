@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-x</title>
     <link rel="stylesheet" type="text/css" href="styles1.css" />
-    <script src="C:\Users\Chris\OneDrive\Documents\GitHub\project-x-experimental-code\project-x\script.js"></script>
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -37,13 +37,6 @@
     </div>
 
     <div id="sideBar">
-      <script>
-        function hideSidebar() {
-          var sidebar = document.getElementById("sideBar");
-          sidebar.style.display = "none";
-        }
-      </script>
-      <img src="menu-icon.png" id="menu-icon" onclick="hideSideBar()" />
       <div id="logoDiv">
         <img src="logo.svg" id="logoImg" alt="logo" />
       </div>
@@ -66,6 +59,12 @@
           </li>
         </ul>
       </nav>
+    </div>
+    <div id="menu-icon-container">
+      <img src="menu-icon.png" id="menu-icon" onclick="toggleSidebar()" />
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </body>
 </html>

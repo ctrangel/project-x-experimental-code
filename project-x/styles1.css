@@ -29,16 +29,16 @@ body{
   width: 41%;
 }
 #sideBar {
-  width: 20%;
-  height: 100%;
-  background-color: #9a44a6;
   position: fixed;
-  left: 0;
   top: 0;
-  overflow: auto;
-  border: 10px solid #9a44a6;
-  margin-left: 0%;
-  padding-left: 0%;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease-in-out;
+}
+#sideBar.open {
+  left: 0;
 }
 .tabs {
   margin: 10%;
@@ -47,10 +47,11 @@ body{
   text-decoration: none;
   border: solid 1px #ffffff;
   border-radius: 10px;
+  color: #D9A282;
 }
 .tabs:hover {
   background-color: #ffffff;
-  color: #9a44a6;
+  color: #D9A282;
 }
 #sideBar-ul {
   margin: 0;
@@ -68,6 +69,7 @@ body{
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: inline-flex;
   align-items: center;
+  color: #D9A282;
 }
 .icons {
   margin: 3%;
@@ -107,9 +109,43 @@ body{
 
 #headline-div {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: 100vh; 
+}
+#menu-icon-div {
   position: relative;
-  left: 10%;
+}
+#menu-icon {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#menu-icon span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 8px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+#menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
