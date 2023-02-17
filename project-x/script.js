@@ -6,3 +6,4 @@ function toggleSidebar() {
     sidebar.classList.toggle("open");
     menuIcon.classList.toggle("open");
   }
+
