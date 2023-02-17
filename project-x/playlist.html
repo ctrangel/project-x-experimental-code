@@ -7,7 +7,7 @@
     <title>Project-x</title>
     <link rel="stylesheet" type="text/css" href="styles1.css" />
     <link rel="stylesheet" type="text/css" href="styles2.css" />
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </head>
 
   <body>
@@ -57,7 +57,7 @@
         <label for="song">Song:</label>
         <input type="text" class="input" id="song" name="song" />
         <br /><br />
-        <button type="submit" id="submit">Submit</button>
+        <button id="submit">Submit</button>
       </form> 
     </div>
     <div id="display-container">
@@ -69,91 +69,6 @@
         </tr>
       </table>
     </div>
-    <script>
-      const form = document.getElementById("playlistForm");
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        let name = document.getElementById("name").value;
-        let artist = document.getElementById("artist").value;
-        let song = document.getElementById("song").value;
-        console.log(name, artist, song);
-        const pLData = new FormData(form);
-        const pLObj = Object.fromEntries(pLData.entries());
-        // console.log(pLObj);
-        alert(
-          "Thank you for your submission!: " + name + ", " + artist + ", " + song
-        );
-      });
-    </script>
-    <script>
-      // const playlistForm = document.querySelector("#playlistForm");
-      // const displayDiv = document.querySelector("#display");
-      // const dataArr = []; 
-
-      // form.addEventListener("submit", (event) => {
-      //   event.preventDefault();
-
-      //   // Get the values of the form fields
-      //   const nameInput = document.querySelector("#name");
-      //   const nameValue = nameInput.value;
-
-      //   const artistInput = document.querySelector("#artist");
-      //   const artistValue = artistInput.value;
-
-      //   const songInput = document.querySelector("#song");
-      //   const songValue = songInput.value;
-
-      //   
-      //   const formData = {
-      //     name: nameValue,
-      //     artist: artistValue,
-      //     song: songValue,
-      //   };
-
-      //   
-      //   displayDiv.innerHTML = `Name: ${formData.name}<br>Artist: ${formData.artist}<br>Song: ${formData.song}`;
-      // });
-    //   const formData = {
-    //     name: "",
-    //     artist: "",
-    //     song: "",
-    //   }
-
-    //   const playlistForm = document.querySelector("#playlistForm");
-    //   const displayDiv = document.querySelector("#display");
-    //   const dataArr = []; 
-
-    //   playlistForm.addEventListener("submit", (event) => {
-    //     event.preventDefault();
-    //     const data = new FormData(event.target);
-
-        
-    //     formData.name = data.get("name");
-    //     formData.artist = data.get("artist");
-    //     formData.song = data.get("song");
-
-        
-    //     dataArr.push(formData);
-    //     console.log(dataArr);
-
-     
-    //     event.target.reset();
-
-       
-    //     displayData(dataArr);
-    //   });
-
-    //   function displayData(data) {
-    //     let output = "";
-
-       
-    //     for (let i = 0; i < data.length; i++) {
-    //       output += `<p>${data[i].name},  ${data[i].artist},  ${data[i].song}, <br> </p>`;
-    //     }
-
-    //     // display the string in the displayDiv
-    //     displayDiv.innerHTML = output;
-    //   }
-    // </script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -51,10 +51,9 @@ th {
     font-weight: 300;
 }
 td {
-    background-color: rgb(217, 162, 130, 0.25);
-    color: rgb(0, 0, 0);
-    font-size: 1.5em;
-    font-weight: 300;
+    font-size: 25px;
+    color: crimson;
+    font-weight: 400;
 }
 .list {
   position: relative;
