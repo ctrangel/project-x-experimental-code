@@ -18,7 +18,7 @@
   top: -15vw;
 }
 #display-div {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -29,10 +29,10 @@
   flex-direction: row;
   align-content: flex-start;
   position: relative;
-  top: -15vw;
+  top: -15vw; */
 }
 #display {
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   width: 50%;
   margin: 50px auto;
   position: relative;

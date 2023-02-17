@@ -14,6 +14,8 @@ entry.addEventListener("click", displayDetails);
 
 
 
+
+
 function displayDetails() {
   let name = document.getElementById("name").value;
   let artist = document.getElementById("artist").value;
@@ -36,5 +38,9 @@ function displayDetails() {
   cell2.innerHTML = artist;
   cell3.innerHTML = song;
 
+  
+
   row++;
+
+  // console.log(row);
 }
